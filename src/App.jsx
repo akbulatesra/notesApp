@@ -1,9 +1,10 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import './App.css';
+import debounce from 'lodash.debounce';
+
 import Navbar from './components/Navbar';
 import Search from './components/Search';
 import NotesList from './components/NotesList';
-import debounce from 'lodash.debounce';
 import {
   addNote,
   deleteNoteById,

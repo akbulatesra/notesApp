@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledAddNote = styled.div`
+const StyledAddNote = styled.div`
   background-color: #fcc5c0;
   min-width: 25%;
   margin: 1rem;
@@ -45,3 +45,5 @@ export const StyledAddNote = styled.div`
     font-family: monospace;
   }
 `;
+
+export default StyledAddNote;

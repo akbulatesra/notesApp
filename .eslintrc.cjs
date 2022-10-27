@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['plugin:react/recommended', 'standard'],
+  extends: ['plugin:react/recommended', 'standard', 'airbnb'],
   overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -22,5 +22,7 @@ module.exports = {
     ],
     'block-spacing': 'error',
     'linebreak-style': 1,
+    'arrow-body-style': 0,
+    'no-underscore-dangle': 0,
   },
 };

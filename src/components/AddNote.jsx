@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
-import { StyledAddNote } from './styles/StyledAddNote';
+import StyledAddNote from './styles/StyledAddNote';
 
 function AddNote({ saveNoteFunction }) {
   const [noteText, setNoteText] = useState('');
   const characterLimit = 200;
+
   const handleFunction = (e) => {
     if (characterLimit - e.target.value.length >= 0) {
       setNoteText(e.target.value);
     }
   };
+
   const addNoteFunction = () => {
     if (noteText.trim().length > 0) {
       saveNoteFunction(noteText);
@@ -28,9 +30,14 @@ function AddNote({ saveNoteFunction }) {
       />
 
       <footer>
-        <p>{characterLimit - noteText.length} Remaining</p>
+        <p>
+          {characterLimit - noteText.length}
+          Remaining
+        </p>
 
-        <button onClick={addNoteFunction}>Save</button>
+        <button type="button" onClick={addNoteFunction}>
+          Save
+        </button>
       </footer>
     </StyledAddNote>
   );
