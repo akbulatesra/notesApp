@@ -1,0 +1,10 @@
+#root {
+  margin: 0 auto;
+  padding: 0;
+}
+body {
+  background: url('./assets/backgroundImage/5177180.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
