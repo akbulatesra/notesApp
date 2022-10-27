@@ -10,6 +10,8 @@
 
 - Search among notes
 
+- Delete notes
+
 
 ## Used Technologies
 
@@ -31,4 +33,5 @@ npm install
 npm run dev
 ```
 
+![notesApp](https://user-images.githubusercontent.com/64817771/198261218-95d5f8dd-3a96-40c5-b83a-1be0c0638bd2.gif)
 
