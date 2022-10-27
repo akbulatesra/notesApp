@@ -30,10 +30,7 @@ function AddNote({ saveNoteFunction }) {
       />
 
       <footer>
-        <p>
-          {characterLimit - noteText.length}
-          Remaining
-        </p>
+        <p>{characterLimit - noteText.length} Remaining</p>
 
         <button type="button" onClick={addNoteFunction}>
           Save
